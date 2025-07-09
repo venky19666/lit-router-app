@@ -1524,184 +1524,15 @@ var _templateObject, _templateObject2;
 function _taggedTemplateLiteral(e, t) { return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, { raw: { value: Object.freeze(t) } })); }
 var baseStyles = exports.baseStyles = (0, _lit.css)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  :host {\n    font-size: 18px;\n  }\n"])));
 var jetbrainsFont = exports.jetbrainsFont = (0, _lit.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n  :host {\n    font-family: 'JetBrains Mono', monospace;\n  }\n"])));
-},{"lit":"node_modules/lit/index.js"}],"src/main-navigation.ts":[function(require,module,exports) {
+},{"lit":"node_modules/lit/index.js"}],"src/pages/home.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.MainNavigation = void 0;
-var _lit = require("lit");
-var _decorators = require("lit/decorators.js");
-var _styles = require("./styles");
-var _templateObject, _templateObject2;
-function _taggedTemplateLiteral(e, t) { return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, { raw: { value: Object.freeze(t) } })); }
-function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
-function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
-function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
-function _possibleConstructorReturn(t, e) { if (e && ("object" == _typeof(e) || "function" == typeof e)) return e; if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined"); return _assertThisInitialized(t); }
-function _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return e; }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-function _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }
-function _inherits(t, e) { if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, "prototype", { writable: !1 }), e && _setPrototypeOf(t, e); }
-function _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-var __decorate = void 0 && (void 0).__decorate || function (decorators, target, key, desc) {
-  var c = arguments.length,
-    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-    d;
-  if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var MainNavigation = exports.MainNavigation = /*#__PURE__*/function (_LitElement) {
-  function MainNavigation() {
-    _classCallCheck(this, MainNavigation);
-    return _callSuper(this, MainNavigation, arguments);
-  }
-  _inherits(MainNavigation, _LitElement);
-  return _createClass(MainNavigation, [{
-    key: "render",
-    value: function render() {
-      return (0, _lit.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <nav>\n        <a href=\"/\">Home</a>\n        <a href=\"/3cutetimers\">3cuteTimers</a>\n        <a href=\"/about\">About</a>\n      </nav>\n    "])));
-    }
-  }]);
-}(_lit.LitElement);
-MainNavigation.styles = [_styles.baseStyles, _styles.jetbrainsFont, (0, _lit.css)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      :host {\n        font-size: 1rem;\n      }\n    "])))];
-exports.MainNavigation = MainNavigation = __decorate([(0, _decorators.customElement)('main-navigation')], MainNavigation);
-},{"lit":"node_modules/lit/index.js","lit/decorators.js":"node_modules/lit/decorators.js","./styles":"src/styles.js"}],"src/timer/icons.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.replay = exports.play = exports.pause = void 0;
-var _lit = require("lit");
-var _templateObject, _templateObject2, _templateObject3;
-function _taggedTemplateLiteral(e, t) { return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, { raw: { value: Object.freeze(t) } })); }
-var replay = exports.replay = (0, _lit.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  enable-background=\"new 0 0 24 24\"\n  height=\"24px\"\n  viewBox=\"0 0 24 24\"\n  width=\"24px\"\n  fill=\"#000000\"\n>\n  <title>Replay</title>\n  <g>\n    <rect fill=\"none\" height=\"24\" width=\"24\" />\n    <rect fill=\"none\" height=\"24\" width=\"24\" />\n    <rect fill=\"none\" height=\"24\" width=\"24\" />\n  </g>\n  <g>\n    <g />\n    <path\n      d=\"M12,5V1L7,6l5,5V7c3.31,0,6,2.69,6,6s-2.69,6-6,6s-6-2.69-6-6H4c0,4.42,3.58,8,8,8s8-3.58,8-8S16.42,5,12,5z\"\n    />\n  </g>\n</svg>"])));
-var pause = exports.pause = (0, _lit.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  height=\"24px\"\n  viewBox=\"0 0 24 24\"\n  width=\"24px\"\n  fill=\"#000000\"\n>\n  <title>Pause</title>\n  <path d=\"M0 0h24v24H0V0z\" fill=\"none\" />\n  <path d=\"M6 19h4V5H6v14zm8-14v14h4V5h-4z\" />\n</svg>"])));
-var play = exports.play = (0, _lit.html)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<svg\n  xmlns=\"http://www.w3.org/2000/svg\"\n  height=\"24px\"\n  viewBox=\"0 0 24 24\"\n  width=\"24px\"\n  fill=\"#000000\"\n>\n  <title>Play</title>\n  <path d=\"M0 0h24v24H0V0z\" fill=\"none\" />\n  <path d=\"M10 8.64L15.27 12 10 15.36V8.64M8 5v14l11-7L8 5z\" />\n</svg>"])));
-},{"lit":"node_modules/lit/index.js"}],"src/timer/my-timer.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.MyTimer = void 0;
-var _lit = require("lit");
-var _decorators = require("lit/decorators.js");
-var _icons = require("./icons");
-var _styles = require("../styles");
-var _templateObject, _templateObject2, _templateObject3, _templateObject4;
-function _taggedTemplateLiteral(e, t) { return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, { raw: { value: Object.freeze(t) } })); }
-function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
-function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
-function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
-function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
-function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
-function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
-function _possibleConstructorReturn(t, e) { if (e && ("object" == _typeof(e) || "function" == typeof e)) return e; if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined"); return _assertThisInitialized(t); }
-function _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return e; }
-function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
-function _superPropGet(t, o, e, r) { var p = _get(_getPrototypeOf(1 & r ? t.prototype : t), o, e); return 2 & r && "function" == typeof p ? function (t) { return p.apply(e, t); } : p; }
-function _get() { return _get = "undefined" != typeof Reflect && Reflect.get ? Reflect.get.bind() : function (e, t, r) { var p = _superPropBase(e, t); if (p) { var n = Object.getOwnPropertyDescriptor(p, t); return n.get ? n.get.call(arguments.length < 3 ? e : r) : n.value; } }, _get.apply(null, arguments); }
-function _superPropBase(t, o) { for (; !{}.hasOwnProperty.call(t, o) && null !== (t = _getPrototypeOf(t));); return t; }
-function _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }
-function _inherits(t, e) { if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, "prototype", { writable: !1 }), e && _setPrototypeOf(t, e); }
-function _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }
-function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
-var __decorate = void 0 && (void 0).__decorate || function (decorators, target, key, desc) {
-  var c = arguments.length,
-    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
-    d;
-  if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-  return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-function pad(pad, val) {
-  return pad ? String(val).padStart(2, '0') : val;
-}
-var MyTimer = exports.MyTimer = /*#__PURE__*/function (_LitElement) {
-  function MyTimer() {
-    var _this;
-    _classCallCheck(this, MyTimer);
-    _this = _callSuper(this, MyTimer, arguments);
-    _this.duration = 60;
-    _this.end = null;
-    _this.remaining = 0;
-    return _this;
-  }
-  _inherits(MyTimer, _LitElement);
-  return _createClass(MyTimer, [{
-    key: "render",
-    value: function render() {
-      var remaining = this.remaining,
-        running = this.running;
-      var min = Math.floor(remaining / 60000);
-      var sec = pad(min, Math.floor(remaining / 1000 % 60));
-      var hun = pad(true, Math.floor(remaining % 1000 / 10));
-      return (0, _lit.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      ", "\n      <footer>\n        ", "\n        <span @click=", ">", "</span>\n      </footer>\n    "])), min ? "".concat(min, ":").concat(sec) : "".concat(sec, ".").concat(hun), remaining === 0 ? '' : running ? (0, _lit.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["<span @click=", ">", "</span>"])), this.pause, _icons.pause) : (0, _lit.html)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<span @click=", ">", "</span>"])), this.start, _icons.play), this.reset, _icons.replay);
-    }
-    /* playground-fold */
-  }, {
-    key: "start",
-    value: function start() {
-      this.end = Date.now() + this.remaining;
-      this.tick();
-    }
-  }, {
-    key: "pause",
-    value: function pause() {
-      this.end = null;
-    }
-  }, {
-    key: "reset",
-    value: function reset() {
-      var running = this.running;
-      this.remaining = this.duration * 1000;
-      this.end = running ? Date.now() + this.remaining : null;
-    }
-  }, {
-    key: "tick",
-    value: function tick() {
-      var _this2 = this;
-      if (this.running) {
-        this.remaining = Math.max(0, this.end - Date.now());
-        requestAnimationFrame(function () {
-          return _this2.tick();
-        });
-      }
-    }
-  }, {
-    key: "running",
-    get: function get() {
-      return this.end && this.remaining;
-    }
-  }, {
-    key: "connectedCallback",
-    value: function connectedCallback() {
-      _superPropGet(MyTimer, "connectedCallback", this, 3)([]);
-      this.reset();
-    } /* playground-fold-end */
-  }]);
-}(_lit.LitElement);
-MyTimer.styles = [_styles.baseStyles, _styles.jetbrainsFont, (0, _lit.css)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n      :host {\n        display: inline-block;\n        min-width: 4em;\n        text-align: center;\n        padding: 0.2em;\n        margin: 0.2em 0.1em;\n        font-size: 1.4em;\n      }\n      footer {\n        user-select: none;\n        font-size: 0.6em;\n      }\n    "])))];
-__decorate([(0, _decorators.property)()], MyTimer.prototype, "duration", void 0);
-__decorate([(0, _decorators.state)()], MyTimer.prototype, "end", void 0);
-__decorate([(0, _decorators.state)()], MyTimer.prototype, "remaining", void 0);
-exports.MyTimer = MyTimer = __decorate([(0, _decorators.customElement)('my-timer')], MyTimer);
-},{"lit":"node_modules/lit/index.js","lit/decorators.js":"node_modules/lit/decorators.js","./icons":"src/timer/icons.ts","../styles":"src/styles.js"}],"src/buncha-timers.ts":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.BunchaTimers = void 0;
+exports.HomePage = void 0;
 var _lit = require("lit");
 var _decorators = require("lit/decorators");
-require("./timer/my-timer");
 var _templateObject;
 function _taggedTemplateLiteral(e, t) { return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, { raw: { value: Object.freeze(t) } })); }
 function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
@@ -1724,21 +1555,899 @@ var __decorate = void 0 && (void 0).__decorate || function (decorators, target, 
   if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
   return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
-var BunchaTimers = exports.BunchaTimers = /*#__PURE__*/function (_LitElement) {
-  function BunchaTimers() {
-    _classCallCheck(this, BunchaTimers);
-    return _callSuper(this, BunchaTimers, arguments);
+var HomePage = exports.HomePage = /*#__PURE__*/function (_LitElement) {
+  function HomePage() {
+    _classCallCheck(this, HomePage);
+    return _callSuper(this, HomePage, arguments);
   }
-  _inherits(BunchaTimers, _LitElement);
-  return _createClass(BunchaTimers, [{
+  _inherits(HomePage, _LitElement);
+  return _createClass(HomePage, [{
     key: "render",
     value: function render() {
-      return (0, _lit.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <div>\n        <my-timer duration=\"7\"></my-timer>\n        <my-timer duration=\"60\"></my-timer>\n        <my-timer duration=\"300\"></my-timer>\n      </div>\n    "])));
+      return (0, _lit.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n      <div>\n        Home page\n      </div>\n    "])));
     }
   }]);
 }(_lit.LitElement);
-exports.BunchaTimers = BunchaTimers = __decorate([(0, _decorators.customElement)('buncha-timers')], BunchaTimers);
-},{"lit":"node_modules/lit/index.js","lit/decorators":"node_modules/lit/decorators.js","./timer/my-timer":"src/timer/my-timer.ts"}],"src/app.ts":[function(require,module,exports) {
+exports.HomePage = HomePage = __decorate([(0, _decorators.customElement)('home-page')], HomePage);
+},{"lit":"node_modules/lit/index.js","lit/decorators":"node_modules/lit/decorators.js"}],"node_modules/@lit/reactive-element/css-tag.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.unsafeCSS = exports.supportsAdoptingStyleSheets = exports.getCompatibleStyle = exports.css = exports.adoptStyles = exports.CSSResult = void 0;
+/**
+ * @license
+ * Copyright 2019 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const t = globalThis,
+  e = exports.supportsAdoptingStyleSheets = t.ShadowRoot && (void 0 === t.ShadyCSS || t.ShadyCSS.nativeShadow) && "adoptedStyleSheets" in Document.prototype && "replace" in CSSStyleSheet.prototype,
+  s = Symbol(),
+  o = new WeakMap();
+class n {
+  constructor(t, e, o) {
+    if (this._$cssResult$ = !0, o !== s) throw Error("CSSResult is not constructable. Use `unsafeCSS` or `css` instead.");
+    this.cssText = t, this.t = e;
+  }
+  get styleSheet() {
+    let t = this.o;
+    const s = this.t;
+    if (e && void 0 === t) {
+      const e = void 0 !== s && 1 === s.length;
+      e && (t = o.get(s)), void 0 === t && ((this.o = t = new CSSStyleSheet()).replaceSync(this.cssText), e && o.set(s, t));
+    }
+    return t;
+  }
+  toString() {
+    return this.cssText;
+  }
+}
+exports.CSSResult = n;
+const r = t => new n("string" == typeof t ? t : t + "", void 0, s),
+  i = (t, ...e) => {
+    const o = 1 === t.length ? t[0] : e.reduce((e, s, o) => e + (t => {
+      if (!0 === t._$cssResult$) return t.cssText;
+      if ("number" == typeof t) return t;
+      throw Error("Value passed to 'css' function must be a 'css' function result: " + t + ". Use 'unsafeCSS' to pass non-literal values, but take care to ensure page security.");
+    })(s) + t[o + 1], t[0]);
+    return new n(o, t, s);
+  },
+  S = (s, o) => {
+    if (e) s.adoptedStyleSheets = o.map(t => t instanceof CSSStyleSheet ? t : t.styleSheet);else for (const e of o) {
+      const o = document.createElement("style"),
+        n = t.litNonce;
+      void 0 !== n && o.setAttribute("nonce", n), o.textContent = e.cssText, s.appendChild(o);
+    }
+  },
+  c = exports.getCompatibleStyle = e ? t => t : t => t instanceof CSSStyleSheet ? (t => {
+    let e = "";
+    for (const s of t.cssRules) e += s.cssText;
+    return r(e);
+  })(t) : t;
+exports.adoptStyles = S;
+exports.css = i;
+exports.unsafeCSS = r;
+},{}],"node_modules/@lit/reactive-element/reactive-element.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "CSSResult", {
+  enumerable: true,
+  get: function () {
+    return _cssTag.CSSResult;
+  }
+});
+exports.ReactiveElement = void 0;
+Object.defineProperty(exports, "adoptStyles", {
+  enumerable: true,
+  get: function () {
+    return _cssTag.adoptStyles;
+  }
+});
+Object.defineProperty(exports, "css", {
+  enumerable: true,
+  get: function () {
+    return _cssTag.css;
+  }
+});
+exports.defaultConverter = void 0;
+Object.defineProperty(exports, "getCompatibleStyle", {
+  enumerable: true,
+  get: function () {
+    return _cssTag.getCompatibleStyle;
+  }
+});
+exports.notEqual = void 0;
+Object.defineProperty(exports, "supportsAdoptingStyleSheets", {
+  enumerable: true,
+  get: function () {
+    return _cssTag.supportsAdoptingStyleSheets;
+  }
+});
+Object.defineProperty(exports, "unsafeCSS", {
+  enumerable: true,
+  get: function () {
+    return _cssTag.unsafeCSS;
+  }
+});
+var _cssTag = require("./css-tag.js");
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const {
+    is: i,
+    defineProperty: e,
+    getOwnPropertyDescriptor: h,
+    getOwnPropertyNames: r,
+    getOwnPropertySymbols: o,
+    getPrototypeOf: n
+  } = Object,
+  a = globalThis,
+  c = a.trustedTypes,
+  l = c ? c.emptyScript : "",
+  p = a.reactiveElementPolyfillSupport,
+  d = (t, s) => t,
+  u = exports.defaultConverter = {
+    toAttribute(t, s) {
+      switch (s) {
+        case Boolean:
+          t = t ? l : null;
+          break;
+        case Object:
+        case Array:
+          t = null == t ? t : JSON.stringify(t);
+      }
+      return t;
+    },
+    fromAttribute(t, s) {
+      let i = t;
+      switch (s) {
+        case Boolean:
+          i = null !== t;
+          break;
+        case Number:
+          i = null === t ? null : Number(t);
+          break;
+        case Object:
+        case Array:
+          try {
+            i = JSON.parse(t);
+          } catch (t) {
+            i = null;
+          }
+      }
+      return i;
+    }
+  },
+  f = (t, s) => !i(t, s),
+  b = {
+    attribute: !0,
+    type: String,
+    converter: u,
+    reflect: !1,
+    useDefault: !1,
+    hasChanged: f
+  };
+exports.notEqual = f;
+Symbol.metadata ??= Symbol("metadata"), a.litPropertyMetadata ??= new WeakMap();
+class y extends HTMLElement {
+  static addInitializer(t) {
+    this._$Ei(), (this.l ??= []).push(t);
+  }
+  static get observedAttributes() {
+    return this.finalize(), this._$Eh && [...this._$Eh.keys()];
+  }
+  static createProperty(t, s = b) {
+    if (s.state && (s.attribute = !1), this._$Ei(), this.prototype.hasOwnProperty(t) && ((s = Object.create(s)).wrapped = !0), this.elementProperties.set(t, s), !s.noAccessor) {
+      const i = Symbol(),
+        h = this.getPropertyDescriptor(t, i, s);
+      void 0 !== h && e(this.prototype, t, h);
+    }
+  }
+  static getPropertyDescriptor(t, s, i) {
+    const {
+      get: e,
+      set: r
+    } = h(this.prototype, t) ?? {
+      get() {
+        return this[s];
+      },
+      set(t) {
+        this[s] = t;
+      }
+    };
+    return {
+      get: e,
+      set(s) {
+        const h = e?.call(this);
+        r?.call(this, s), this.requestUpdate(t, h, i);
+      },
+      configurable: !0,
+      enumerable: !0
+    };
+  }
+  static getPropertyOptions(t) {
+    return this.elementProperties.get(t) ?? b;
+  }
+  static _$Ei() {
+    if (this.hasOwnProperty(d("elementProperties"))) return;
+    const t = n(this);
+    t.finalize(), void 0 !== t.l && (this.l = [...t.l]), this.elementProperties = new Map(t.elementProperties);
+  }
+  static finalize() {
+    if (this.hasOwnProperty(d("finalized"))) return;
+    if (this.finalized = !0, this._$Ei(), this.hasOwnProperty(d("properties"))) {
+      const t = this.properties,
+        s = [...r(t), ...o(t)];
+      for (const i of s) this.createProperty(i, t[i]);
+    }
+    const t = this[Symbol.metadata];
+    if (null !== t) {
+      const s = litPropertyMetadata.get(t);
+      if (void 0 !== s) for (const [t, i] of s) this.elementProperties.set(t, i);
+    }
+    this._$Eh = new Map();
+    for (const [t, s] of this.elementProperties) {
+      const i = this._$Eu(t, s);
+      void 0 !== i && this._$Eh.set(i, t);
+    }
+    this.elementStyles = this.finalizeStyles(this.styles);
+  }
+  static finalizeStyles(s) {
+    const i = [];
+    if (Array.isArray(s)) {
+      const e = new Set(s.flat(1 / 0).reverse());
+      for (const s of e) i.unshift((0, _cssTag.getCompatibleStyle)(s));
+    } else void 0 !== s && i.push((0, _cssTag.getCompatibleStyle)(s));
+    return i;
+  }
+  static _$Eu(t, s) {
+    const i = s.attribute;
+    return !1 === i ? void 0 : "string" == typeof i ? i : "string" == typeof t ? t.toLowerCase() : void 0;
+  }
+  constructor() {
+    super(), this._$Ep = void 0, this.isUpdatePending = !1, this.hasUpdated = !1, this._$Em = null, this._$Ev();
+  }
+  _$Ev() {
+    this._$ES = new Promise(t => this.enableUpdating = t), this._$AL = new Map(), this._$E_(), this.requestUpdate(), this.constructor.l?.forEach(t => t(this));
+  }
+  addController(t) {
+    (this._$EO ??= new Set()).add(t), void 0 !== this.renderRoot && this.isConnected && t.hostConnected?.();
+  }
+  removeController(t) {
+    this._$EO?.delete(t);
+  }
+  _$E_() {
+    const t = new Map(),
+      s = this.constructor.elementProperties;
+    for (const i of s.keys()) this.hasOwnProperty(i) && (t.set(i, this[i]), delete this[i]);
+    t.size > 0 && (this._$Ep = t);
+  }
+  createRenderRoot() {
+    const t = this.shadowRoot ?? this.attachShadow(this.constructor.shadowRootOptions);
+    return (0, _cssTag.adoptStyles)(t, this.constructor.elementStyles), t;
+  }
+  connectedCallback() {
+    this.renderRoot ??= this.createRenderRoot(), this.enableUpdating(!0), this._$EO?.forEach(t => t.hostConnected?.());
+  }
+  enableUpdating(t) {}
+  disconnectedCallback() {
+    this._$EO?.forEach(t => t.hostDisconnected?.());
+  }
+  attributeChangedCallback(t, s, i) {
+    this._$AK(t, i);
+  }
+  _$ET(t, s) {
+    const i = this.constructor.elementProperties.get(t),
+      e = this.constructor._$Eu(t, i);
+    if (void 0 !== e && !0 === i.reflect) {
+      const h = (void 0 !== i.converter?.toAttribute ? i.converter : u).toAttribute(s, i.type);
+      this._$Em = t, null == h ? this.removeAttribute(e) : this.setAttribute(e, h), this._$Em = null;
+    }
+  }
+  _$AK(t, s) {
+    const i = this.constructor,
+      e = i._$Eh.get(t);
+    if (void 0 !== e && this._$Em !== e) {
+      const t = i.getPropertyOptions(e),
+        h = "function" == typeof t.converter ? {
+          fromAttribute: t.converter
+        } : void 0 !== t.converter?.fromAttribute ? t.converter : u;
+      this._$Em = e, this[e] = h.fromAttribute(s, t.type) ?? this._$Ej?.get(e) ?? null, this._$Em = null;
+    }
+  }
+  requestUpdate(t, s, i) {
+    if (void 0 !== t) {
+      const e = this.constructor,
+        h = this[t];
+      if (i ??= e.getPropertyOptions(t), !((i.hasChanged ?? f)(h, s) || i.useDefault && i.reflect && h === this._$Ej?.get(t) && !this.hasAttribute(e._$Eu(t, i)))) return;
+      this.C(t, s, i);
+    }
+    !1 === this.isUpdatePending && (this._$ES = this._$EP());
+  }
+  C(t, s, {
+    useDefault: i,
+    reflect: e,
+    wrapped: h
+  }, r) {
+    i && !(this._$Ej ??= new Map()).has(t) && (this._$Ej.set(t, r ?? s ?? this[t]), !0 !== h || void 0 !== r) || (this._$AL.has(t) || (this.hasUpdated || i || (s = void 0), this._$AL.set(t, s)), !0 === e && this._$Em !== t && (this._$Eq ??= new Set()).add(t));
+  }
+  async _$EP() {
+    this.isUpdatePending = !0;
+    try {
+      await this._$ES;
+    } catch (t) {
+      Promise.reject(t);
+    }
+    const t = this.scheduleUpdate();
+    return null != t && (await t), !this.isUpdatePending;
+  }
+  scheduleUpdate() {
+    return this.performUpdate();
+  }
+  performUpdate() {
+    if (!this.isUpdatePending) return;
+    if (!this.hasUpdated) {
+      if (this.renderRoot ??= this.createRenderRoot(), this._$Ep) {
+        for (const [t, s] of this._$Ep) this[t] = s;
+        this._$Ep = void 0;
+      }
+      const t = this.constructor.elementProperties;
+      if (t.size > 0) for (const [s, i] of t) {
+        const {
+            wrapped: t
+          } = i,
+          e = this[s];
+        !0 !== t || this._$AL.has(s) || void 0 === e || this.C(s, void 0, i, e);
+      }
+    }
+    let t = !1;
+    const s = this._$AL;
+    try {
+      t = this.shouldUpdate(s), t ? (this.willUpdate(s), this._$EO?.forEach(t => t.hostUpdate?.()), this.update(s)) : this._$EM();
+    } catch (s) {
+      throw t = !1, this._$EM(), s;
+    }
+    t && this._$AE(s);
+  }
+  willUpdate(t) {}
+  _$AE(t) {
+    this._$EO?.forEach(t => t.hostUpdated?.()), this.hasUpdated || (this.hasUpdated = !0, this.firstUpdated(t)), this.updated(t);
+  }
+  _$EM() {
+    this._$AL = new Map(), this.isUpdatePending = !1;
+  }
+  get updateComplete() {
+    return this.getUpdateComplete();
+  }
+  getUpdateComplete() {
+    return this._$ES;
+  }
+  shouldUpdate(t) {
+    return !0;
+  }
+  update(t) {
+    this._$Eq &&= this._$Eq.forEach(t => this._$ET(t, this[t])), this._$EM();
+  }
+  updated(t) {}
+  firstUpdated(t) {}
+}
+exports.ReactiveElement = y;
+y.elementStyles = [], y.shadowRootOptions = {
+  mode: "open"
+}, y[d("elementProperties")] = new Map(), y[d("finalized")] = new Map(), p?.({
+  ReactiveElement: y
+}), (a.reactiveElementVersions ??= []).push("2.1.0");
+},{"./css-tag.js":"node_modules/@lit/reactive-element/css-tag.js"}],"node_modules/lit-html/lit-html.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.svg = exports.render = exports.nothing = exports.noChange = exports.mathml = exports.html = exports._$LH = void 0;
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const t = globalThis,
+  i = t.trustedTypes,
+  s = i ? i.createPolicy("lit-html", {
+    createHTML: t => t
+  }) : void 0,
+  e = "$lit$",
+  h = `lit$${Math.random().toFixed(9).slice(2)}$`,
+  o = "?" + h,
+  n = `<${o}>`,
+  r = document,
+  l = () => r.createComment(""),
+  c = t => null === t || "object" != typeof t && "function" != typeof t,
+  a = Array.isArray,
+  u = t => a(t) || "function" == typeof t?.[Symbol.iterator],
+  d = "[ \t\n\f\r]",
+  f = /<(?:(!--|\/[^a-zA-Z])|(\/?[a-zA-Z][^>\s]*)|(\/?$))/g,
+  v = /-->/g,
+  _ = />/g,
+  m = RegExp(`>|${d}(?:([^\\s"'>=/]+)(${d}*=${d}*(?:[^ \t\n\f\r"'\`<>=]|("|')|))|$)`, "g"),
+  p = /'/g,
+  g = /"/g,
+  $ = /^(?:script|style|textarea|title)$/i,
+  y = t => (i, ...s) => ({
+    _$litType$: t,
+    strings: i,
+    values: s
+  }),
+  x = exports.html = y(1),
+  b = exports.svg = y(2),
+  w = exports.mathml = y(3),
+  T = exports.noChange = Symbol.for("lit-noChange"),
+  E = exports.nothing = Symbol.for("lit-nothing"),
+  A = new WeakMap(),
+  C = r.createTreeWalker(r, 129);
+function P(t, i) {
+  if (!a(t) || !t.hasOwnProperty("raw")) throw Error("invalid template strings array");
+  return void 0 !== s ? s.createHTML(i) : i;
+}
+const V = (t, i) => {
+  const s = t.length - 1,
+    o = [];
+  let r,
+    l = 2 === i ? "<svg>" : 3 === i ? "<math>" : "",
+    c = f;
+  for (let i = 0; i < s; i++) {
+    const s = t[i];
+    let a,
+      u,
+      d = -1,
+      y = 0;
+    for (; y < s.length && (c.lastIndex = y, u = c.exec(s), null !== u);) y = c.lastIndex, c === f ? "!--" === u[1] ? c = v : void 0 !== u[1] ? c = _ : void 0 !== u[2] ? ($.test(u[2]) && (r = RegExp("</" + u[2], "g")), c = m) : void 0 !== u[3] && (c = m) : c === m ? ">" === u[0] ? (c = r ?? f, d = -1) : void 0 === u[1] ? d = -2 : (d = c.lastIndex - u[2].length, a = u[1], c = void 0 === u[3] ? m : '"' === u[3] ? g : p) : c === g || c === p ? c = m : c === v || c === _ ? c = f : (c = m, r = void 0);
+    const x = c === m && t[i + 1].startsWith("/>") ? " " : "";
+    l += c === f ? s + n : d >= 0 ? (o.push(a), s.slice(0, d) + e + s.slice(d) + h + x) : s + h + (-2 === d ? i : x);
+  }
+  return [P(t, l + (t[s] || "<?>") + (2 === i ? "</svg>" : 3 === i ? "</math>" : "")), o];
+};
+class N {
+  constructor({
+    strings: t,
+    _$litType$: s
+  }, n) {
+    let r;
+    this.parts = [];
+    let c = 0,
+      a = 0;
+    const u = t.length - 1,
+      d = this.parts,
+      [f, v] = V(t, s);
+    if (this.el = N.createElement(f, n), C.currentNode = this.el.content, 2 === s || 3 === s) {
+      const t = this.el.content.firstChild;
+      t.replaceWith(...t.childNodes);
+    }
+    for (; null !== (r = C.nextNode()) && d.length < u;) {
+      if (1 === r.nodeType) {
+        if (r.hasAttributes()) for (const t of r.getAttributeNames()) if (t.endsWith(e)) {
+          const i = v[a++],
+            s = r.getAttribute(t).split(h),
+            e = /([.?@])?(.*)/.exec(i);
+          d.push({
+            type: 1,
+            index: c,
+            name: e[2],
+            strings: s,
+            ctor: "." === e[1] ? H : "?" === e[1] ? I : "@" === e[1] ? L : k
+          }), r.removeAttribute(t);
+        } else t.startsWith(h) && (d.push({
+          type: 6,
+          index: c
+        }), r.removeAttribute(t));
+        if ($.test(r.tagName)) {
+          const t = r.textContent.split(h),
+            s = t.length - 1;
+          if (s > 0) {
+            r.textContent = i ? i.emptyScript : "";
+            for (let i = 0; i < s; i++) r.append(t[i], l()), C.nextNode(), d.push({
+              type: 2,
+              index: ++c
+            });
+            r.append(t[s], l());
+          }
+        }
+      } else if (8 === r.nodeType) if (r.data === o) d.push({
+        type: 2,
+        index: c
+      });else {
+        let t = -1;
+        for (; -1 !== (t = r.data.indexOf(h, t + 1));) d.push({
+          type: 7,
+          index: c
+        }), t += h.length - 1;
+      }
+      c++;
+    }
+  }
+  static createElement(t, i) {
+    const s = r.createElement("template");
+    return s.innerHTML = t, s;
+  }
+}
+function S(t, i, s = t, e) {
+  if (i === T) return i;
+  let h = void 0 !== e ? s._$Co?.[e] : s._$Cl;
+  const o = c(i) ? void 0 : i._$litDirective$;
+  return h?.constructor !== o && (h?._$AO?.(!1), void 0 === o ? h = void 0 : (h = new o(t), h._$AT(t, s, e)), void 0 !== e ? (s._$Co ??= [])[e] = h : s._$Cl = h), void 0 !== h && (i = S(t, h._$AS(t, i.values), h, e)), i;
+}
+class M {
+  constructor(t, i) {
+    this._$AV = [], this._$AN = void 0, this._$AD = t, this._$AM = i;
+  }
+  get parentNode() {
+    return this._$AM.parentNode;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  u(t) {
+    const {
+        el: {
+          content: i
+        },
+        parts: s
+      } = this._$AD,
+      e = (t?.creationScope ?? r).importNode(i, !0);
+    C.currentNode = e;
+    let h = C.nextNode(),
+      o = 0,
+      n = 0,
+      l = s[0];
+    for (; void 0 !== l;) {
+      if (o === l.index) {
+        let i;
+        2 === l.type ? i = new R(h, h.nextSibling, this, t) : 1 === l.type ? i = new l.ctor(h, l.name, l.strings, this, t) : 6 === l.type && (i = new z(h, this, t)), this._$AV.push(i), l = s[++n];
+      }
+      o !== l?.index && (h = C.nextNode(), o++);
+    }
+    return C.currentNode = r, e;
+  }
+  p(t) {
+    let i = 0;
+    for (const s of this._$AV) void 0 !== s && (void 0 !== s.strings ? (s._$AI(t, s, i), i += s.strings.length - 2) : s._$AI(t[i])), i++;
+  }
+}
+class R {
+  get _$AU() {
+    return this._$AM?._$AU ?? this._$Cv;
+  }
+  constructor(t, i, s, e) {
+    this.type = 2, this._$AH = E, this._$AN = void 0, this._$AA = t, this._$AB = i, this._$AM = s, this.options = e, this._$Cv = e?.isConnected ?? !0;
+  }
+  get parentNode() {
+    let t = this._$AA.parentNode;
+    const i = this._$AM;
+    return void 0 !== i && 11 === t?.nodeType && (t = i.parentNode), t;
+  }
+  get startNode() {
+    return this._$AA;
+  }
+  get endNode() {
+    return this._$AB;
+  }
+  _$AI(t, i = this) {
+    t = S(this, t, i), c(t) ? t === E || null == t || "" === t ? (this._$AH !== E && this._$AR(), this._$AH = E) : t !== this._$AH && t !== T && this._(t) : void 0 !== t._$litType$ ? this.$(t) : void 0 !== t.nodeType ? this.T(t) : u(t) ? this.k(t) : this._(t);
+  }
+  O(t) {
+    return this._$AA.parentNode.insertBefore(t, this._$AB);
+  }
+  T(t) {
+    this._$AH !== t && (this._$AR(), this._$AH = this.O(t));
+  }
+  _(t) {
+    this._$AH !== E && c(this._$AH) ? this._$AA.nextSibling.data = t : this.T(r.createTextNode(t)), this._$AH = t;
+  }
+  $(t) {
+    const {
+        values: i,
+        _$litType$: s
+      } = t,
+      e = "number" == typeof s ? this._$AC(t) : (void 0 === s.el && (s.el = N.createElement(P(s.h, s.h[0]), this.options)), s);
+    if (this._$AH?._$AD === e) this._$AH.p(i);else {
+      const t = new M(e, this),
+        s = t.u(this.options);
+      t.p(i), this.T(s), this._$AH = t;
+    }
+  }
+  _$AC(t) {
+    let i = A.get(t.strings);
+    return void 0 === i && A.set(t.strings, i = new N(t)), i;
+  }
+  k(t) {
+    a(this._$AH) || (this._$AH = [], this._$AR());
+    const i = this._$AH;
+    let s,
+      e = 0;
+    for (const h of t) e === i.length ? i.push(s = new R(this.O(l()), this.O(l()), this, this.options)) : s = i[e], s._$AI(h), e++;
+    e < i.length && (this._$AR(s && s._$AB.nextSibling, e), i.length = e);
+  }
+  _$AR(t = this._$AA.nextSibling, i) {
+    for (this._$AP?.(!1, !0, i); t && t !== this._$AB;) {
+      const i = t.nextSibling;
+      t.remove(), t = i;
+    }
+  }
+  setConnected(t) {
+    void 0 === this._$AM && (this._$Cv = t, this._$AP?.(t));
+  }
+}
+class k {
+  get tagName() {
+    return this.element.tagName;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  constructor(t, i, s, e, h) {
+    this.type = 1, this._$AH = E, this._$AN = void 0, this.element = t, this.name = i, this._$AM = e, this.options = h, s.length > 2 || "" !== s[0] || "" !== s[1] ? (this._$AH = Array(s.length - 1).fill(new String()), this.strings = s) : this._$AH = E;
+  }
+  _$AI(t, i = this, s, e) {
+    const h = this.strings;
+    let o = !1;
+    if (void 0 === h) t = S(this, t, i, 0), o = !c(t) || t !== this._$AH && t !== T, o && (this._$AH = t);else {
+      const e = t;
+      let n, r;
+      for (t = h[0], n = 0; n < h.length - 1; n++) r = S(this, e[s + n], i, n), r === T && (r = this._$AH[n]), o ||= !c(r) || r !== this._$AH[n], r === E ? t = E : t !== E && (t += (r ?? "") + h[n + 1]), this._$AH[n] = r;
+    }
+    o && !e && this.j(t);
+  }
+  j(t) {
+    t === E ? this.element.removeAttribute(this.name) : this.element.setAttribute(this.name, t ?? "");
+  }
+}
+class H extends k {
+  constructor() {
+    super(...arguments), this.type = 3;
+  }
+  j(t) {
+    this.element[this.name] = t === E ? void 0 : t;
+  }
+}
+class I extends k {
+  constructor() {
+    super(...arguments), this.type = 4;
+  }
+  j(t) {
+    this.element.toggleAttribute(this.name, !!t && t !== E);
+  }
+}
+class L extends k {
+  constructor(t, i, s, e, h) {
+    super(t, i, s, e, h), this.type = 5;
+  }
+  _$AI(t, i = this) {
+    if ((t = S(this, t, i, 0) ?? E) === T) return;
+    const s = this._$AH,
+      e = t === E && s !== E || t.capture !== s.capture || t.once !== s.once || t.passive !== s.passive,
+      h = t !== E && (s === E || e);
+    e && this.element.removeEventListener(this.name, this, s), h && this.element.addEventListener(this.name, this, t), this._$AH = t;
+  }
+  handleEvent(t) {
+    "function" == typeof this._$AH ? this._$AH.call(this.options?.host ?? this.element, t) : this._$AH.handleEvent(t);
+  }
+}
+class z {
+  constructor(t, i, s) {
+    this.element = t, this.type = 6, this._$AN = void 0, this._$AM = i, this.options = s;
+  }
+  get _$AU() {
+    return this._$AM._$AU;
+  }
+  _$AI(t) {
+    S(this, t);
+  }
+}
+const Z = exports._$LH = {
+    M: e,
+    P: h,
+    A: o,
+    C: 1,
+    L: V,
+    R: M,
+    D: u,
+    V: S,
+    I: R,
+    H: k,
+    N: I,
+    U: L,
+    B: H,
+    F: z
+  },
+  j = t.litHtmlPolyfillSupport;
+j?.(N, R), (t.litHtmlVersions ??= []).push("3.3.0");
+const B = (t, i, s) => {
+  const e = s?.renderBefore ?? i;
+  let h = e._$litPart$;
+  if (void 0 === h) {
+    const t = s?.renderBefore ?? null;
+    e._$litPart$ = h = new R(i.insertBefore(l(), t), t, void 0, s ?? {});
+  }
+  return h._$AI(t), h;
+};
+exports.render = B;
+},{}],"node_modules/lit-element/lit-element.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _exportNames = {
+  LitElement: true,
+  _$LE: true
+};
+exports._$LE = exports.LitElement = void 0;
+var _reactiveElement = require("@lit/reactive-element");
+Object.keys(_reactiveElement).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _reactiveElement[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _reactiveElement[key];
+    }
+  });
+});
+var _litHtml = require("lit-html");
+Object.keys(_litHtml).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _litHtml[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _litHtml[key];
+    }
+  });
+});
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */
+const s = globalThis;
+class i extends _reactiveElement.ReactiveElement {
+  constructor() {
+    super(...arguments), this.renderOptions = {
+      host: this
+    }, this._$Do = void 0;
+  }
+  createRenderRoot() {
+    const t = super.createRenderRoot();
+    return this.renderOptions.renderBefore ??= t.firstChild, t;
+  }
+  update(t) {
+    const r = this.render();
+    this.hasUpdated || (this.renderOptions.isConnected = this.isConnected), super.update(t), this._$Do = (0, _litHtml.render)(r, this.renderRoot, this.renderOptions);
+  }
+  connectedCallback() {
+    super.connectedCallback(), this._$Do?.setConnected(!0);
+  }
+  disconnectedCallback() {
+    super.disconnectedCallback(), this._$Do?.setConnected(!1);
+  }
+  render() {
+    return _litHtml.noChange;
+  }
+}
+exports.LitElement = i;
+i._$litElement$ = !0, i["finalized"] = !0, s.litElementHydrateSupport?.({
+  LitElement: i
+});
+const o = s.litElementPolyfillSupport;
+o?.({
+  LitElement: i
+});
+const n = exports._$LE = {
+  _$AK: (t, e, r) => {
+    t._$AK(e, r);
+  },
+  _$AL: t => t._$AL
+};
+(s.litElementVersions ??= []).push("4.2.0");
+},{"@lit/reactive-element":"node_modules/@lit/reactive-element/reactive-element.js","lit-html":"node_modules/lit-html/lit-html.js"}],"node_modules/lit-element/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var _exportNames = {
+  LitElement: true,
+  _$LE: true
+};
+Object.defineProperty(exports, "LitElement", {
+  enumerable: true,
+  get: function () {
+    return _litElement.LitElement;
+  }
+});
+Object.defineProperty(exports, "_$LE", {
+  enumerable: true,
+  get: function () {
+    return _litElement._$LE;
+  }
+});
+var _reactiveElement = require("@lit/reactive-element");
+Object.keys(_reactiveElement).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _reactiveElement[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _reactiveElement[key];
+    }
+  });
+});
+var _litHtml = require("lit-html");
+Object.keys(_litHtml).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
+  if (key in exports && exports[key] === _litHtml[key]) return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function () {
+      return _litHtml[key];
+    }
+  });
+});
+var _litElement = require("./lit-element.js");
+},{"@lit/reactive-element":"node_modules/@lit/reactive-element/reactive-element.js","lit-html":"node_modules/lit-html/lit-html.js","./lit-element.js":"node_modules/lit-element/lit-element.js"}],"src/components/layout/index.ts":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.MainLayout = void 0;
+var _litElement = require("lit-element");
+var _decorators = require("lit/decorators");
+var _templateObject;
+function _taggedTemplateLiteral(e, t) { return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, { raw: { value: Object.freeze(t) } })); }
+function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
+function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
+function _createClass(e, r, t) { return r && _defineProperties(e.prototype, r), t && _defineProperties(e, t), Object.defineProperty(e, "prototype", { writable: !1 }), e; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+function _callSuper(t, o, e) { return o = _getPrototypeOf(o), _possibleConstructorReturn(t, _isNativeReflectConstruct() ? Reflect.construct(o, e || [], _getPrototypeOf(t).constructor) : o.apply(t, e)); }
+function _possibleConstructorReturn(t, e) { if (e && ("object" == _typeof(e) || "function" == typeof e)) return e; if (void 0 !== e) throw new TypeError("Derived constructors may only return object or undefined"); return _assertThisInitialized(t); }
+function _assertThisInitialized(e) { if (void 0 === e) throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); return e; }
+function _isNativeReflectConstruct() { try { var t = !Boolean.prototype.valueOf.call(Reflect.construct(Boolean, [], function () {})); } catch (t) {} return (_isNativeReflectConstruct = function _isNativeReflectConstruct() { return !!t; })(); }
+function _getPrototypeOf(t) { return _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf.bind() : function (t) { return t.__proto__ || Object.getPrototypeOf(t); }, _getPrototypeOf(t); }
+function _inherits(t, e) { if ("function" != typeof e && null !== e) throw new TypeError("Super expression must either be null or a function"); t.prototype = Object.create(e && e.prototype, { constructor: { value: t, writable: !0, configurable: !0 } }), Object.defineProperty(t, "prototype", { writable: !1 }), e && _setPrototypeOf(t, e); }
+function _setPrototypeOf(t, e) { return _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function (t, e) { return t.__proto__ = e, t; }, _setPrototypeOf(t, e); }
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+var __decorate = void 0 && (void 0).__decorate || function (decorators, target, key, desc) {
+  var c = arguments.length,
+    r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc,
+    d;
+  if ((typeof Reflect === "undefined" ? "undefined" : _typeof(Reflect)) === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+  return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var MainLayout = exports.MainLayout = /*#__PURE__*/function (_LitElement) {
+  function MainLayout() {
+    _classCallCheck(this, MainLayout);
+    return _callSuper(this, MainLayout, arguments);
+  }
+  _inherits(MainLayout, _LitElement);
+  return _createClass(MainLayout, [{
+    key: "render",
+    value: function render() {
+      return (0, _litElement.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n            MainLayout\n        "])));
+    }
+  }]);
+}(_litElement.LitElement);
+exports.MainLayout = MainLayout = __decorate([(0, _decorators.customElement)('main-layout')], MainLayout);
+},{"lit-element":"node_modules/lit-element/index.js","lit/decorators":"node_modules/lit/decorators.js"}],"src/app.ts":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -1749,10 +2458,9 @@ var _lit = require("lit");
 var _decorators = require("lit/decorators.js");
 var _router = require("@lit-labs/router");
 var _styles = require("./styles");
-require("./main-navigation");
-require("./timer/my-timer");
-require("./buncha-timers");
-var _templateObject, _templateObject2, _templateObject3, _templateObject4;
+require("./pages/home");
+require("./components/layout");
+var _templateObject, _templateObject2;
 function _taggedTemplateLiteral(e, t) { return t || (t = e.slice(0)), Object.freeze(Object.defineProperties(e, { raw: { value: Object.freeze(t) } })); }
 function _classCallCheck(a, n) { if (!(a instanceof n)) throw new TypeError("Cannot call a class as a function"); }
 function _defineProperties(e, r) { for (var t = 0; t < r.length; t++) { var o = r[t]; o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, _toPropertyKey(o.key), o); } }
@@ -1780,20 +2488,9 @@ var ChrisoLitapp = exports.ChrisoLitapp = /*#__PURE__*/function (_LitElement) {
     _classCallCheck(this, ChrisoLitapp);
     _this = _callSuper(this, ChrisoLitapp, arguments);
     _this.router = new _router.Router(_this, [{
-      path: '/3cutetimers',
-      render: function render() {
-        return (0, _lit.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["<buncha-timers></buncha-timers>"])));
-      }
-    }, {
-      path: '/about',
-      render: function render() {
-        return (0, _lit.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["<h1>About</h1>"])));
-      }
-    }, {
       path: '/',
       render: function render() {
-        console.log('rendered default route');
-        return (0, _lit.html)(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["<p>Welcome to Home</p>"])));
+        return (0, _lit.html)(_templateObject || (_templateObject = _taggedTemplateLiteral(["<home-page></home-page>"])));
       }
     }]);
     return _this;
@@ -1802,17 +2499,13 @@ var ChrisoLitapp = exports.ChrisoLitapp = /*#__PURE__*/function (_LitElement) {
   return _createClass(ChrisoLitapp, [{
     key: "render",
     value: function render() {
-      return (0, _lit.html)(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral(["\n      <main-navigation></main-navigation>\n      <main>", "</main>\n    "])), this.router.outlet());
+      return (0, _lit.html)(_templateObject2 || (_templateObject2 = _taggedTemplateLiteral(["\n      <main-layout></main-layout>\n      <main>", "</main>\n    "])), this.router.outlet());
     }
   }]);
 }(_lit.LitElement);
 ChrisoLitapp.styles = [_styles.baseStyles];
 exports.ChrisoLitapp = ChrisoLitapp = __decorate([(0, _decorators.customElement)('chriso-litapp')], ChrisoLitapp);
-},{"lit":"node_modules/lit/index.js","lit/decorators.js":"node_modules/lit/decorators.js","@lit-labs/router":"node_modules/@lit-labs/router/index.js","./styles":"src/styles.js","./main-navigation":"src/main-navigation.ts","./timer/my-timer":"src/timer/my-timer.ts","./buncha-timers":"src/buncha-timers.ts"}],"src/app-loader.ts":[function(require,module,exports) {
-"use strict";
-
-require("./app");
-},{"./app":"src/app.ts"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"lit":"node_modules/lit/index.js","lit/decorators.js":"node_modules/lit/decorators.js","@lit-labs/router":"node_modules/@lit-labs/router/index.js","./styles":"src/styles.js","./pages/home":"src/pages/home.ts","./components/layout":"src/components/layout/index.ts"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -1981,5 +2674,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/app-loader.ts"], null)
-//# sourceMappingURL=/app-loader.67269743.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/app.ts"], null)
+//# sourceMappingURL=/app.5cec07dd.js.map
